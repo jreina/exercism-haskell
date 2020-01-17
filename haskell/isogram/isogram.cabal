@@ -1,0 +1,38 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.31.2.
+--
+-- see: https://github.com/sol/hpack
+--
+-- hash: 607e9cfdb7c0607219ff3262fb3e2bc38e8303bf8e59a08fbe54ac3e00170fcc
+
+name:           isogram
+version:        1.7.0.8
+build-type:     Simple
+
+library
+  exposed-modules:
+      Isogram
+  other-modules:
+      Paths_isogram
+  hs-source-dirs:
+      src
+  ghc-options: -Wall
+  build-depends:
+      base
+    , text
+  default-language: Haskell2010
+
+test-suite test
+  type: exitcode-stdio-1.0
+  main-is: Tests.hs
+  other-modules:
+      Paths_isogram
+  hs-source-dirs:
+      test
+  build-depends:
+      base
+    , hspec
+    , isogram
+    , text
+  default-language: Haskell2010
